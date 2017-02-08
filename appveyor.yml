@@ -28,6 +28,7 @@
 
   build:
     parallel: true
+    publish_wap: true
     
   artifacts:
     - path: ParametersXml
