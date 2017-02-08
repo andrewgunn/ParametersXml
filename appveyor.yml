@@ -5,7 +5,7 @@
     only:
       - master
       
-  version: 0.11.0
+  version: 0.12.0
   
   skip_tags: true
 
@@ -28,7 +28,11 @@
 
   build:
     parallel: true
-    publish_wap: true
+    
+  artifacts:
+    - path: ParametersXml
+      name: ParametersXml
+      type: zip
 
   on_failure:
     - ps: Update-AppveyorBuild -Version "$($Env:APPVEYOR_BUILD_VERSION).$($Env:APPVEYOR_BUILD_NUMBER)-fail"
