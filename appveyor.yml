@@ -23,6 +23,9 @@
 
   configuration: Release
 
+  before_build:
+    - appveyor-retry nuget restore
+
   build:
     parallel: true
     
