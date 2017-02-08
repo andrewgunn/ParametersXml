@@ -27,7 +27,7 @@
     parallel: true
     
   artifacts:
-    - path: artifacts\ParametersXml
+    - path: ParametersXml
       name: ParametersXml
       type: zip
 
