@@ -1,6 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
-<parameters>
+﻿<parameters>
    <parameter name="CustomErrors" description="Add customErrors section to the Web.config" defaultValue="&lt;customErrors defaultRedirect=&quot;error.html&quot; mode=&quot;On&quot;/&gt;">
       <parameterEntry kind="XmlFile" scope="\\Web.config$" match="/configuration/system.web/customErrors" />
    </parameter>
