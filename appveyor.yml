@@ -5,7 +5,7 @@
     only:
       - master
       
-  version: 0.6.0
+  version: 0.7.0
   
   skip_tags: true
 
@@ -32,7 +32,7 @@
   artifacts:
     - path: ParametersXml
       name: ParametersXml
-      type: zip
+      type: WebDeployPackage
 
   on_failure:
     - ps: Update-AppveyorBuild -Version "$($Env:APPVEYOR_BUILD_VERSION).$($Env:APPVEYOR_BUILD_NUMBER)-fail"
